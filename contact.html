@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Sharnbasva University</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Arial, sans-serif;background:#f3f4f6;color:#111;padding:24px;display:flex;align-items:center;justify-content:center;min-height:100vh}
+    .card{width:100%;max-width:720px;background:#fff;padding:24px;border-radius:10px;box-shadow:0 6px 20px rgba(0,0,0,.06)}
+    h2{margin-bottom:12px;color:#d33}
+    p.lead{margin-bottom:18px;color:#555}
+    form{display:grid;gap:12px}
+    input[type="text"],input[type="email"],textarea{
+      width:100%;padding:10px;border:1px solid #ddd;border-radius:6px;font-size:15px
+    }
+    textarea{min-height:120px;resize:vertical}
+    .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .actions{display:flex;gap:8px;justify-content:flex-end;margin-top:6px}
+    button{background:#ff6a00;color:#fff;padding:10px 16px;border:none;border-radius:6px;cursor:pointer}
+    button.secondary{background:#eee;color:#333}
+    @media(max-width:600px){.row{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Contact Us</h2>
+    <p class="lead">Have questions? Send us a message and we'll get back to you.</p>
+
+    <form>
+      <div class="row">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Email address" required>
+      </div>
+      <input type="text" name="subject" placeholder="Subject">
+      <textarea name="message" placeholder="Your message" required></textarea>
+      <div class="actions">
+        <button type="button" class="secondary">Clear</button>
+        <button type="submit">Send Message</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
